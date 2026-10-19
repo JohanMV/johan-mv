@@ -249,13 +249,21 @@
 }
 
 /* Give Spotify the full playlist height; reclaim the space from the cover. */
-.music-panel iframe { height: 352px; }
+.music-panel iframe { height: 412px; }
 
 @media (min-width: 1024px) {
-  .music-cover { height: clamp(170px, 24dvh, 270px); }
+  .music-cover { height: clamp(145px, 18dvh, 205px); }
 }
 
 @media (min-width: 1024px) and (max-height: 680px) {
-  .music-cover { height: 140px; }
+  .music-cover { height: 125px; }
   .spotify-fallback { display: none; }
+}
+
+@media (max-width: 1023px) {
+  .music-cover { height: 270px; }
+}
+
+@media (max-width: 600px) {
+  .music-cover { height: 250px; }
 }
