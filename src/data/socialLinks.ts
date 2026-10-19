@@ -4,5 +4,5 @@ export const socialLinks = {
   medium: 'https://medium.com/@johan.mv',
   spotify: 'https://open.spotify.com/user/31zkjyaakukzrjis5fremwjlclo4',
   playlist: 'https://open.spotify.com/playlist/6XryTdZbjMdfFEURVZdphG',
-  spotifyEmbed: 'https://open.spotify.com/embed/playlist/6XryTdZbjMdfFEURVZdphG?utm_source=generator&theme=0',
+  spotifyEmbed: 'https://open.spotify.com/embed/playlist/6XryTdZbjMdfFEURVZdphG?utm_source=oembed',
 } as const

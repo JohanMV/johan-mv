@@ -247,3 +247,15 @@
     white-space: nowrap;
   }
 }
+
+/* Give Spotify the full playlist height; reclaim the space from the cover. */
+.music-panel iframe { height: 352px; }
+
+@media (min-width: 1024px) {
+  .music-cover { height: clamp(170px, 24dvh, 270px); }
+}
+
+@media (min-width: 1024px) and (max-height: 680px) {
+  .music-cover { height: 140px; }
+  .spotify-fallback { display: none; }
+}
