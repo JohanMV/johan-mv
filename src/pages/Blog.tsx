@@ -1,0 +1,10 @@
+import { articles, type Article } from '../data/articles'
+import { socialLinks } from '../data/socialLinks'
+import { Arrow, ExternalLink, Reveal } from '../components/UI'
+import { BrandIcon } from '../components/SocialLinks'
+function ArticleCard({ article, featured = false }: { article: Article; featured?: boolean }) {
+  return <article className={`article-card ${featured ? 'featured' : ''}`}><div className="article-image"><img src={article.image} alt={article.alt} loading={featured ? 'eager' : 'lazy'} /></div><div className="article-body"><span className="category-label">{article.category}</span><h2>{article.title}</h2>{(article.date || article.readingMinutes) && <p className="article-meta">{article.readingMinutes && `${article.readingMinutes} min de lectura`}{article.date && ` · ${article.date}`}</p>}<div className="article-action">{article.url ? <ExternalLink href={article.url} className={featured ? 'button yellow' : 'text-link'}>Leer <Arrow /></ExternalLink> : <span className="pending">Enlace pendiente</span>}</div></div></article>
+}
+export default function Blog() {
+  return <><div className="blog-top"><Reveal className="blog-intro"><p className="eyebrow">Medium</p><h1>MIS BLOGS</h1><span className="accent-stroke" /><p>Aquí reúno mis artículos, análisis y reflexiones publicados en Medium sobre inteligencia artificial, ciberseguridad, sistemas RAG, ciencia y otros temas que me apasionan. Es un espacio donde comparto lo que aprendo, investigo y pienso sobre el mundo tecnológico y su impacto en la sociedad.</p><ExternalLink href={socialLinks.medium} className="button medium-button"><BrandIcon brand="medium" />Ver perfil en Medium <Arrow /></ExternalLink></Reveal><Reveal delay={.08}><ArticleCard article={articles[0]} featured /></Reveal></div><div className="blog-grid">{articles.slice(1).map((a, i) => <Reveal key={a.id} delay={i * .05}><ArticleCard article={a} /></Reveal>)}</div><p className="image-credit">Portadas temáticas: Unsplash. <a href="/image-credits.txt" target="_blank" rel="noopener noreferrer">Créditos de imágenes</a></p></>
+}

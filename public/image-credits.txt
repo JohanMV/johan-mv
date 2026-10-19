@@ -1,0 +1,23 @@
+RECURSOS VISUALES — JOHAN MV
+
+Fotografías originales: Johan MV. Se conservan sin alteración de rasgos.
+
+Fotografías temáticas gratuitas de Unsplash, utilizadas como inspiración y portadas provisionales, no como fotografías personales.
+Licencia: https://unsplash.com/license
+
+cat.webp — https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba
+dog.webp — https://images.unsplash.com/photo-1552053831-71594a27632d
+gym.webp — https://images.unsplash.com/photo-1534438327276-14e5300c3a48
+basket.webp — https://images.unsplash.com/photo-1546519638-68e109498ffc
+lab.webp — https://images.unsplash.com/photo-1532187863486-abf9dbad1b69
+space.webp — https://images.unsplash.com/photo-1462331940025-496dfbfc7564
+coast.webp — https://images.unsplash.com/photo-1473116763249-2faaef81ccda
+desk.webp — https://images.unsplash.com/photo-1497215728101-856f4ea42174
+medical.webp — https://images.unsplash.com/photo-1579154204601-01588f351e67
+laptop.webp — https://images.unsplash.com/photo-1496181133206-80ce9b88a853
+server.webp — https://images.unsplash.com/photo-1558494949-ef010cbdcc31
+code.webp — https://images.unsplash.com/photo-1555066931-4365d14bab8c
+sunset.webp — https://images.unsplash.com/photo-1477959858617-67f85cf4f1df
+
+Iconos de marcas: Simple Icons, https://simpleicons.org/ (CC0; las marcas pertenecen a sus respectivos titulares).
+Tipografías: Anton e Inter, distribuidas mediante Fontsource bajo SIL Open Font License.
