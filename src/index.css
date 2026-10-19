@@ -215,3 +215,35 @@
     white-space: nowrap;
   }
 }
+
+/* Balanced content inside the three About cards. */
+.interests {
+  list-style: none;
+  padding: 0;
+}
+.interests li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  padding: 13px;
+  border: 1.5px solid var(--ink);
+  border-radius: 22px;
+  background: var(--white);
+  font-weight: 600;
+}
+.interests li:first-child { background: var(--accent); }
+
+@media (min-width: 1200px) {
+  .interests-panel .interests {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 14px;
+    margin-bottom: 0;
+  }
+  .interests-panel .interests li {
+    justify-content: center;
+    gap: 7px;
+    padding-inline: 7px;
+    white-space: nowrap;
+  }
+}
